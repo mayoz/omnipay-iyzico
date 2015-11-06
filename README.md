@@ -5,9 +5,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mayoz/omnipay-iyzico.svg?style=flat-square)](https://packagist.org/packages/mayoz/omnipay-iyzico)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/mayoz/omnipay-iyzico/master.svg?style=flat-square)](https://travis-ci.org/mayoz/omnipay-iyzico)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mayoz/omnipay-iyzico.svg?style=flat-square)](https://scrutinizer-ci.com/g/mayoz/omnipay-iyzico/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/mayoz/omnipay-iyzico.svg?style=flat-square)](https://scrutinizer-ci.com/g/mayoz/omnipay-iyzico)
-[![Total Downloads](https://img.shields.io/packagist/dt/mayoz/omnipay-iyzico.svg?style=flat-square)](https://packagist.org/packages/mayoz/omnipay-iyzico)
 
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment

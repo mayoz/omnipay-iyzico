@@ -1,0 +1,37 @@
+{
+    "name": "mayoz/omnipay-iyzico",
+    "type": "library",
+    "description": "Iyzico driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "iyzico"
+    ],
+    "homepage": "https://github.com/mayoz/omnipay-iyzico",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sercan Çakır",
+            "email": "srcnckr@gmail.com"
+        },
+        {
+            "name": "Omnipay Contributors",
+            "homepage": "https://github.com/thephpleague/omnipay-paypal/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Iyzico\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    }
+}

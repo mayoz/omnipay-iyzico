@@ -1,0 +1,47 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 15 Feb 2013 18:25:28 GMT
+Content-Type: application/json;charset=utf-8
+Content-Length: 995
+Connection: keep-alive
+Cache-Control: no-cache, no-store
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 300
+
+{
+    "response": {
+        "state": "success",
+        "date_time": "15-11-06 17:38:19",
+        "request_id": "MTQ0NjgzMTQ5OArABirnISnF5KCCbyjn"
+    },
+    "mode": "test",
+    "transaction": {
+        "transaction_id": "MTQ0NjgzMTQ5OArABirnISnF5KCCbyjn",
+        "external_id": "ORDER001",
+        "reference_id": "XXXXX______20151106173819.09439303",
+        "state": "paid",
+        "amount": "100.00",
+        "currency": "TRY",
+        "connector_type": "Garanti",
+        "installment_count":" ",
+        "connector_auth_code": "C39624"
+    },
+    "customer": {
+        "first_name": "",
+        "last_name": "",
+        "email": ""
+    },
+    "account": {
+        "bin": "424242",
+        "brand": "visa",
+        "expiry_month": "12",
+        "expiry_year": "2016",
+        "lastfourdigits": "4242",
+        "holder": "John Doe",
+        "card_family": "Bonus",
+        "card_type": "CREDIT_CARD",
+        "card_association": "VISA",
+        "issuer_bank_code": "123",
+        "issuer_bank_name": "Garanti"
+    }
+}

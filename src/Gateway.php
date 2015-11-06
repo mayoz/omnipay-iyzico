@@ -3,13 +3,6 @@
 namespace Omnipay\Iyzico;
 
 use Omnipay\Common\AbstractGateway;
-use Omnipay\Iyzico\Message\AuthorizeRequest;
-use Omnipay\Iyzico\Message\CaptureRequest;
-use Omnipay\Iyzico\Message\CreateCardRequest;
-use Omnipay\Iyzico\Message\DeleteCardRequest;
-use Omnipay\Iyzico\Message\PurchaseRequest;
-use Omnipay\Iyzico\Message\RefundRequest;
-use Omnipay\Iyzico\Message\VoidRequest;
 
 class Gateway extends AbstractGateway
 {
@@ -109,7 +102,7 @@ class Gateway extends AbstractGateway
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest(AuthorizeRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\AuthorizeRequest', $parameters);
     }
 
     /**
@@ -120,7 +113,7 @@ class Gateway extends AbstractGateway
      */
     public function capture(array $parameters = array())
     {
-        return $this->createRequest(CaptureRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\CaptureRequest', $parameters);
     }
 
     /**
@@ -131,7 +124,7 @@ class Gateway extends AbstractGateway
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest(PurchaseRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\PurchaseRequest', $parameters);
     }
 
     /**
@@ -142,7 +135,7 @@ class Gateway extends AbstractGateway
      */
     public function refund(array $parameters = array())
     {
-        return $this->createRequest(RefundRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\RefundRequest', $parameters);
     }
 
     /**
@@ -153,7 +146,7 @@ class Gateway extends AbstractGateway
      */
     public function void(array $parameters = array())
     {
-        return $this->createRequest(VoidRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\VoidRequest', $parameters);
     }
 
     /**
@@ -164,7 +157,7 @@ class Gateway extends AbstractGateway
      */
     public function createCard(array $parameters = array())
     {
-        return $this->createRequest(CreateCardRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\CreateCardRequest', $parameters);
     }
 
     /**
@@ -175,6 +168,6 @@ class Gateway extends AbstractGateway
      */
     public function deleteCard(array $parameters = array())
     {
-        return $this->createRequest(DeleteCardRequest::class, $parameters);
+        return $this->createRequest('\Omnipay\Iyzico\Message\DeleteCardRequest', $parameters);
     }
 }

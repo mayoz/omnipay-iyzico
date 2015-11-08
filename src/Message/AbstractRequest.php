@@ -153,7 +153,6 @@ abstract class AbstractRequest extends BaseAbstractRequest
         );
 
         $httpResponse = $httpRequest->send();
-        echo "<pre>";print_r($httpResponse->json());
 
         return $this->response = new Response($this, $httpResponse->json());
     }
